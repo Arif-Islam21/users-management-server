@@ -5,6 +5,7 @@ const port = process.env.PORT || 5000;
 
 // middlewere
 app.use(cors());
+app.use(express.json());
 
 const users = [
   {
