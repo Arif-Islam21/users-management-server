@@ -28,6 +28,11 @@ app.get("/users", (req, res) => {
   res.send(users);
 });
 
+app.post("/users", (req, res) => {
+  console.log("Post api hitting");
+  console.log(req.body);
+});
+
 app.get("/", (req, res) => {
   res.send("Users management server is running");
 });
